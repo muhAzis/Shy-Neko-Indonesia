@@ -96,6 +96,7 @@
 /* ------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
+  scroll-margin-inline: 100vw;
 }
 
 body {
@@ -1343,6 +1344,10 @@ footer .copyright p {
 
   /* ------------------------------------------------- */
 
+  .jumbotron {
+    background-color: #2f8213;
+  }
+
   .jumbotron .bg-filter {
     flex-direction: column;
     gap: 70px;
@@ -1395,7 +1400,7 @@ footer .copyright p {
 
   main .content article.about {
     flex-direction: column;
-    padding: 200px 80px;
+    padding: 200px 10px;
     gap: 40px;
   }
 
@@ -1452,14 +1457,16 @@ footer .copyright p {
 
   article.products {
     padding: 150px 0px;
-    scale: 0.8;
+  }
+
+  article.products .products-row2 {
+    align-items: center;
   }
 
   /* ------------------------------------------------- */
 
   article.reviews {
     padding-inline: 20px;
-    /* scale: 0.8; */
   }
 
   /* ------------------------------------------------- */
@@ -1644,8 +1651,12 @@ footer .copyright p {
 
   /* ------------------------------------------------- */
 
+  aside .biography .content .arrow {
+    display: none;
+  }
+
   aside .biography .content .cards-wrapper {
-    width: 450px;
+    width: 90vw;
   }
 
   aside .biography .content .cards-wrapper .cards .card-wrapper {
