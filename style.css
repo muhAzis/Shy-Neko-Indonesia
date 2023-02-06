@@ -1515,7 +1515,7 @@ footer .copyright p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   nav {
     padding: 20px 45px;
   }
