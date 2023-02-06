@@ -1450,7 +1450,7 @@ footer .copyright p {
 
   article.news .news-filter .news-col2 {
     width: 800px;
-    scale: 0.8;
+    /* scale: 0.8; */
   }
 
   /* ------------------------------------------------- */
@@ -1617,12 +1617,99 @@ footer .copyright p {
   /* ------------------------------------------------- */
 
   article.news .news-filter .news-col1 {
+    width: 90%;
+  }
+
+  article.news .news-filter .news-col1 p {
     width: 400px;
   }
 
   article.news .news-filter .news-col2 {
-    width: 800px;
-    scale: 0.55;
+    width: 80vw;
+  }
+
+  article.news .news-filter .news-col2 .row1 {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article.news .news-filter .news-col2 .row1 .arrow-left,
+  article.news .news-filter .news-col2 .row1 .arrow-right {
+    display: none;
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    gap: 30px;
+    align-items: center;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    /* background-color: #2f8213; */
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper .cards {
+    display: flex;
+    position: relative;
+    background-color: var(--backColor);
+    border-radius: 10px;
+    scroll-snap-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper .cards .col1 {
+    width: 110px;
+    height: 140px;
+    overflow: hidden;
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper .cards img {
+    width: 140px;
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper .cards h4 {
+    font-size: 18px;
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper .cards p {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  article.news .news-filter .news-col2 .row1 .cards-wrapper .cards .col2 {
+    padding: 20px 30px;
+  }
+
+  article.news .news-filter .news-col2 .row2 {
+    display: flex;
+    position: relative;
+    padding-block: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article.news .news-filter .news-col2 .row2 span {
+    width: 10px;
+    height: 10px;
+    background-color: var(--backColor);
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  article.news .news-filter .news-col2 .row2 span:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  article.news .news-filter .news-col2 .row2 .active {
+    opacity: 1;
   }
 
   /* ------------------------------------------------- */

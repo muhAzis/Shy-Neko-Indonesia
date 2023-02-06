@@ -31,9 +31,9 @@ if (window.innerWidth < 1024) {
 }
 
 // News Cards Slider ---------------------------------------------------------------
-const card = document.querySelectorAll('.cards-wrapper .cards');
-const arrowLeft = document.querySelector('.news-col2 .row1 .arrow-left');
-const arrowRight = document.querySelector('.news-col2 .row1 .arrow-right');
+const card = document.querySelectorAll('article.news .news-filter .news-col2 .row1 .cards-wrapper .cards');
+const arrowLeft = document.querySelector('article.news .news-filter .news-col2 .row1 .arrow-left');
+const arrowRight = document.querySelector('article.news .news-filter .news-col2 .row1 .arrow-right');
 
 const active = document.querySelectorAll('.news-col2 .row2 span');
 
